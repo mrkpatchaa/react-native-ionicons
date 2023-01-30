@@ -1,0 +1,9 @@
+# Example folder
+example/
+
+# Scripts
+src/generate_icons.sh
+test.sh
+
+# CI
+.github/
