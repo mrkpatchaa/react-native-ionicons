@@ -5,9 +5,11 @@ export function Icon({name, size, color}) {
     height: size,
     width: size,
     fill: color,
+    color: color,
   }) : Icons[name]({
     height: size,
     width: size,
     fill: color,
+    color: color,
   })
 }

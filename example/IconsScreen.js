@@ -52,6 +52,7 @@ const App = () => {
           paddingBottom: 20,
           fontWeight: '600',
           fontSize: 30,
+          textAlign: 'center'
         }}>
         react-native-ionicons
       </Text>
