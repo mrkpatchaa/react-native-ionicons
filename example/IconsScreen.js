@@ -77,7 +77,7 @@ const App = () => {
           autoCapitalize={'none'}
           value={color}
           onChangeText={text => {
-            setColor(text.replace(/[^0-9a-f]/g, ''));
+            setColor(text.replace(/[^0-9a-fA-F]/g, ''));
           }}
           placeholder="00c7be"
           maxLength={6}

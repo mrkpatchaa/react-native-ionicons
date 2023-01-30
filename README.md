@@ -4,6 +4,8 @@ Use the latest [Ionicons](https://ionic.io/ionicons/) (v6+) in your React Native
 
 Based on this fantastic work [https://github.com/michaelbnd/react-native-ionicons](https://github.com/michaelbnd/react-native-ionicons)
 
+<img src="Screenshots/exampleApp.gif">
+
 ## About Ionicons
 Ionicons is a completely open-source icon set with 1,300+ icons.
 
