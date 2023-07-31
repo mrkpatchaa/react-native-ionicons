@@ -1,4 +1,0 @@
-import * as React from "react";
-import Svg, { Path } from "react-native-svg";
-const SvgCompassOutline = props => <Svg xmlns="http://www.w3.org/2000/svg" className="compass-outline_svg__ionicon" viewBox="0 0 512 512" width={24} height={24} {...props}><Path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" strokeMiterlimit={10} strokeWidth={32} /><Path d="m350.67 150.93-117.2 46.88a64 64 0 0 0-35.66 35.66l-46.88 117.2a8 8 0 0 0 10.4 10.4l117.2-46.88a64 64 0 0 0 35.66-35.66l46.88-117.2a8 8 0 0 0-10.4-10.4zM256 280a24 24 0 1 1 24-24 24 24 0 0 1-24 24z" /></Svg>;
-export default SvgCompassOutline;

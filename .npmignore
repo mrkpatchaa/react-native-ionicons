@@ -2,7 +2,7 @@
 example/
 
 # Scripts
-src/generate_icons.sh
+src/generate-svg.js
 test.sh
 
 # CI

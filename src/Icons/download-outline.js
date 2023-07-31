@@ -1,4 +1,0 @@
-import * as React from "react";
-import Svg, { Path } from "react-native-svg";
-const SvgDownloadOutline = props => <Svg xmlns="http://www.w3.org/2000/svg" className="download-outline_svg__ionicon" viewBox="0 0 512 512" width={24} height={24} {...props}><Path d="M336 176h40a40 40 0 0 1 40 40v208a40 40 0 0 1-40 40H136a40 40 0 0 1-40-40V216a40 40 0 0 1 40-40h40" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={32} /><Path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={32} d="m176 272 80 80 80-80M256 48v288" /></Svg>;
-export default SvgDownloadOutline;

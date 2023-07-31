@@ -1,4 +1,0 @@
-import * as React from "react";
-import Svg, { Path } from "react-native-svg";
-const SvgRepeatOutline = props => <Svg xmlns="http://www.w3.org/2000/svg" className="repeat-outline_svg__ionicon" viewBox="0 0 512 512" width={24} height={24} {...props}><Path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={32} d="m320 120 48 48-48 48" /><Path d="M352 168H144a80.24 80.24 0 0 0-80 80v16m128 128-48-48 48-48" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={32} /><Path d="M160 344h208a80.24 80.24 0 0 0 80-80v-16" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={32} /></Svg>;
-export default SvgRepeatOutline;

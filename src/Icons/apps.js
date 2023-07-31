@@ -1,4 +1,0 @@
-import * as React from "react";
-import Svg, { Path } from "react-native-svg";
-const SvgApps = props => <Svg xmlns="http://www.w3.org/2000/svg" className="apps_svg__ionicon" viewBox="0 0 512 512" width={24} height={24} {...props}><Path d="M104 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56zm152 0a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56zm152 0a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56zM104 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56zm152 0a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56zm152 0a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56zM104 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56zm152 0a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56zm152 0a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56z" /></Svg>;
-export default SvgApps;
