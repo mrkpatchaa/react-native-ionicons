@@ -41,12 +41,12 @@ const generateIcon = (icon) => {
     filePath.replace(/^.*\//, '').replace(/\.svg$/, '')
   )
 
-  console.log(componentName)
-  console.log(svgCode)
+  // console.log(componentName)
+  // console.log(svgCode)
   transform(svgCode, options, {
     componentName: componentNameMap[componentName] || componentName,
   }).then((tsCode) => {
-    console.log(tsCode)
+    // console.log(tsCode)
     tsCode = tsCode
       .replace('SvgProps, ', '')
       .replace('function', "import { IconProps } from '../lib'\n\nfunction")
@@ -88,7 +88,7 @@ const generateIcon = (icon) => {
 }
 
 const getIconList = () => {
-  return ['accessibility']
+  // return ['accessibility']
   const files = fs
     .readdirSync(path.join(svgsDir))
     .filter((file) => file.endsWith('.svg'))
