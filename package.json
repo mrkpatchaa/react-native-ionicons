@@ -9,7 +9,6 @@
   "scripts": {
     "/gen:icons": "./src/generate_icons.sh node_modules/ionicons/dist/svg",
     "gen:icons": "node generate-svg.js",
-    "prepublish": "npm run gen:icons",
     "prepare": "bob build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
