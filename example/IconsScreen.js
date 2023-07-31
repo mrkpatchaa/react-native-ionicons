@@ -11,8 +11,10 @@ import {
   useWindowDimensions,
   Button
 } from 'react-native';
-import * as IconPack from '@mrkpatchaa/react-native-ionicons';
-const { IconContext, ...Icons } = IconPack;
+import {Icon} from '@mrkpatchaa/react-native-ionicons';
+import {Icons} from '@mrkpatchaa/react-native-ionicons/src/map';
+
+const names = Object.keys(Icons);
 
 function PickerItem({tag, selection, setSelection}) {
   return (
@@ -39,7 +41,7 @@ const App = () => {
   const iconSize = (width - 6 * 32) / 5;
   const [color, setColor] = useState('');
   const [display, setDisplay] = useState('grid');
-  const [mirrorActive, setMirrorActive] = useState(false);
+  const [iconStyle, setIconStyle] = useState('outline');
 
   return (
     <SafeAreaView style={{flex: 1}}>
@@ -81,7 +83,7 @@ const App = () => {
           maxLength={6}
         />
         <View style={{flex: 1}} />
-        {/* <PickerItem
+        <PickerItem
           tag="outline"
           selection={iconStyle}
           setSelection={setIconStyle}
@@ -95,25 +97,26 @@ const App = () => {
           tag="sharp"
           selection={iconStyle}
           setSelection={setIconStyle}
-        /> */}
+        />
       </View>
       <FlatList
         contentContainerStyle={{paddingHorizontal: 16}}
         numColumns={display === 'grid' ? 5 : 1}
-        data={Object.entries(Icons).filter(([, Icon]) => !!Icon)}
-        keyExtractor={(item) => item[0]}
+        data={names.filter(item => iconStyle === 'filled' && !(item.endsWith('-outline') || item.endsWith('-sharp')) || item.endsWith(`-${iconStyle}`))}
+        keyExtractor={item => item}
         key={display}
-        renderItem={({ item: [name, Icon] }) => (
+        renderItem={({item}) => {
+          return (
             <View style={{padding: 16, alignItems:'center', flexDirection: display === 'list' ? 'row' : 'column'}}>
               <Icon
+                name={item}
                 size={iconSize}
                 color={color.length !== 6 ? '#000' : '#' + color}
-                mirrored={mirrorActive}
               />
-              {display === 'list' && <Text style={{marginLeft: 5}}>{name}</Text>  }
+              {display === 'list' && <Text style={{marginLeft: 5}}>{item}</Text>  }
             </View>
-          )
-        }
+          );
+        }}
       />
     </SafeAreaView>
   );

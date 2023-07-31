@@ -1,0 +1,4 @@
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+const SvgSearchCircleOutline = props => <Svg xmlns="http://www.w3.org/2000/svg" className="search-circle-outline_svg__ionicon" viewBox="0 0 512 512" width={24} height={24} {...props}><Path d="M256 80a176 176 0 1 0 176 176A176 176 0 0 0 256 80z" fill="none" stroke="currentColor" strokeMiterlimit={10} strokeWidth={32} /><Path d="M232 160a72 72 0 1 0 72 72 72 72 0 0 0-72-72z" fill="none" stroke="currentColor" strokeMiterlimit={10} strokeWidth={32} /><Path fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit={10} strokeWidth={32} d="M283.64 283.64 336 336" /></Svg>;
+export default SvgSearchCircleOutline;

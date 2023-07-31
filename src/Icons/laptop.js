@@ -1,0 +1,4 @@
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+const SvgLaptop = props => <Svg xmlns="http://www.w3.org/2000/svg" className="laptop_svg__ionicon" viewBox="0 0 512 512" width={24} height={24} {...props}><Path d="M496 400h-28.34A47.92 47.92 0 0 0 480 367.86V128.14A48.2 48.2 0 0 0 431.86 80H80.14A48.2 48.2 0 0 0 32 128.14v239.72A47.92 47.92 0 0 0 44.34 400H16a16 16 0 0 0 0 32h480a16 16 0 0 0 0-32z" /></Svg>;
+export default SvgLaptop;

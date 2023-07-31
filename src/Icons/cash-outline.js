@@ -1,0 +1,4 @@
+import * as React from "react";
+import Svg, { Rect, Path, Circle } from "react-native-svg";
+const SvgCashOutline = props => <Svg xmlns="http://www.w3.org/2000/svg" className="cash-outline_svg__ionicon" viewBox="0 0 512 512" width={24} height={24} {...props}><Rect x={32} y={80} width={448} height={256} rx={16} ry={16} transform="rotate(180 256 208)" fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth={32} /><Path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={32} d="M64 384h384M96 432h320" /><Circle cx={256} cy={208} r={80} fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={32} /><Path d="M480 160a80 80 0 0 1-80-80M32 160a80 80 0 0 0 80-80m368 176a80 80 0 0 0-80 80M32 256a80 80 0 0 1 80 80" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={32} /></Svg>;
+export default SvgCashOutline;
