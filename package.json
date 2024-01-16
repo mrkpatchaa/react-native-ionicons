@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/mrkpatchaa/react-native-ionicons#readme",
   "dependencies": {
-    "ionicons": "^7.1.0"
+    "ionicons": "^7.2.2"
   }
 }

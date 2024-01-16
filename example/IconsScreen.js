@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
   View,
   useWindowDimensions,
-  Button
+  Button,
 } from 'react-native';
 import {Icon} from '@mrkpatchaa/react-native-ionicons';
 import {Icons} from '@mrkpatchaa/react-native-ionicons/src/map';
@@ -52,7 +52,7 @@ const App = () => {
           paddingBottom: 20,
           fontWeight: '600',
           fontSize: 30,
-          textAlign: 'center'
+          textAlign: 'center',
         }}>
         react-native-ionicons
       </Text>
@@ -64,10 +64,10 @@ const App = () => {
           paddingBottom: 8,
         }}>
         {display === 'grid' && (
-          <Button title='List' onPress={() => setDisplay('list')} />
+          <Button title="List" onPress={() => setDisplay('list')} />
         )}
         {display === 'list' && (
-          <Button title='Grid' onPress={() => setDisplay('grid')} />
+          <Button title="Grid" onPress={() => setDisplay('grid')} />
         )}
         <Text style={{fontSize: 16, color: '#007aff', fontWeight: '600'}}>
           #
@@ -102,18 +102,30 @@ const App = () => {
       <FlatList
         contentContainerStyle={{paddingHorizontal: 16}}
         numColumns={display === 'grid' ? 5 : 1}
-        data={names.filter(item => iconStyle === 'filled' && !(item.endsWith('-outline') || item.endsWith('-sharp')) || item.endsWith(`-${iconStyle}`))}
+        data={names.filter(
+          item =>
+            (iconStyle === 'filled' &&
+              !(item.endsWith('-outline') || item.endsWith('-sharp'))) ||
+            item.endsWith(`-${iconStyle}`),
+        )}
         keyExtractor={item => item}
         key={display}
         renderItem={({item}) => {
           return (
-            <View style={{padding: 16, alignItems:'center', flexDirection: display === 'list' ? 'row' : 'column'}}>
+            <View
+              style={{
+                padding: 16,
+                alignItems: 'center',
+                flexDirection: display === 'list' ? 'row' : 'column',
+              }}>
               <Icon
                 name={item}
                 size={iconSize}
                 color={color.length !== 6 ? '#000' : '#' + color}
               />
-              {display === 'list' && <Text style={{marginLeft: 5}}>{item}</Text>  }
+              {display === 'list' && (
+                <Text style={{marginLeft: 5}}>{item}</Text>
+              )}
             </View>
           );
         }}
