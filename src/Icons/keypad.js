@@ -1,4 +1,0 @@
-import * as React from "react";
-import Svg, { Path } from "react-native-svg";
-const SvgKeypad = props => <Svg xmlns="http://www.w3.org/2000/svg" className="keypad_svg__ionicon" viewBox="0 0 512 512" width={24} height={24} {...props}><Path d="M256 400a48 48 0 1 0 48 48 48 48 0 0 0-48-48m0-128a48 48 0 1 0 48 48 48 48 0 0 0-48-48m0-128a48 48 0 1 0 48 48 48 48 0 0 0-48-48m0-128a48 48 0 1 0 48 48 48 48 0 0 0-48-48m128 256a48 48 0 1 0 48 48 48 48 0 0 0-48-48m0-128a48 48 0 1 0 48 48 48 48 0 0 0-48-48m0-128a48 48 0 1 0 48 48 48 48 0 0 0-48-48M128 272a48 48 0 1 0 48 48 48 48 0 0 0-48-48m0-128a48 48 0 1 0 48 48 48 48 0 0 0-48-48m0-128a48 48 0 1 0 48 48 48 48 0 0 0-48-48" /></Svg>;
-export default SvgKeypad;

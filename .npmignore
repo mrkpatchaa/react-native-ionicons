@@ -1,5 +1,5 @@
 # Example folder
-example/
+react-native-ionicons-example/
 
 # Scripts
 src/generate_icons.sh
@@ -10,3 +10,5 @@ test.sh
 
 # Screenshots
 Screenshots/
+
+mrkpatchaa-react-native-ionicons.tgz

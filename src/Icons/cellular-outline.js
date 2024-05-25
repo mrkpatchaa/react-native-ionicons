@@ -1,4 +1,0 @@
-import * as React from "react";
-import Svg, { Rect } from "react-native-svg";
-const SvgCellularOutline = props => <Svg xmlns="http://www.w3.org/2000/svg" className="cellular-outline_svg__ionicon" viewBox="0 0 512 512" width={24} height={24} {...props}><Rect width={64} height={320} x={416} y={96} fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth={32} rx={8} ry={8} /><Rect width={64} height={240} x={288} y={176} fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth={32} rx={8} ry={8} /><Rect width={64} height={176} x={160} y={240} fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth={32} rx={8} ry={8} /><Rect width={64} height={112} x={32} y={304} fill="none" stroke="currentColor" strokeLinejoin="round" strokeWidth={32} rx={8} ry={8} /></Svg>;
-export default SvgCellularOutline;
